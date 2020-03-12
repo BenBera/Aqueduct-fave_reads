@@ -69,7 +69,7 @@ class ReadsController extends ResourceController {
 
 // String  id = request.path.variables['id'];
 // int idInt = int.tryParse(id);
-//     if (idInt < 0 || idInt > reads.length) {
+//     if (idInt < 0 || idInt > reads.length-1) {
 
 //       return Response.notFound(body: 'Item not found.');
 //     }

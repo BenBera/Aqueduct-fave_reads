@@ -14,7 +14,7 @@ class FaveReadsChannel extends ApplicationChannel {
         (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
 
     final config = ReadConfig(options.configurationFilePath);
-    print(config.database.port);
+    // print(config.database.port);
     // Specify data model
     final dataModel = ManagedDataModel.fromCurrentMirrorSystem();
 
@@ -25,6 +25,7 @@ class FaveReadsChannel extends ApplicationChannel {
         config.database.host,
         config.database.port,
         config.database.databaseName);
+       
         
     context = ManagedContext(dataModel, persistentStore);
   }
